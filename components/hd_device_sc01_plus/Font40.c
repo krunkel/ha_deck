@@ -10,11 +10,11 @@
 #include "lvgl/lvgl.h"
 #endif
 
-#ifndef ROBOTO_40
-#define ROBOTO_40 1
+#ifndef FONT40
+#define FONT40 1
 #endif
 
-#if ROBOTO_40
+#if FONT40
 
 /*-----------------
  *    BITMAPS
@@ -1594,9 +1594,9 @@ static lv_font_fmt_txt_dsc_t font_dsc = {
 
 /*Initialize a public general font descriptor*/
 #if LVGL_VERSION_MAJOR >= 8
-const lv_font_t roboto_40 = {
+const lv_font_t Font40 = {
 #else
-lv_font_t roboto_40 = {
+lv_font_t Font40 = {
 #endif
     .get_glyph_dsc = lv_font_get_glyph_dsc_fmt_txt,    /*Function pointer to get glyph's data*/
     .get_glyph_bitmap = lv_font_get_bitmap_fmt_txt,    /*Function pointer to get glyph's bitmap*/
@@ -1616,5 +1616,5 @@ lv_font_t roboto_40 = {
 
 
 
-#endif /*#if ROBOTO_40*/
+#endif /*#if FONT40*/
 
