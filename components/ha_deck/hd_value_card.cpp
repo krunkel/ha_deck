@@ -74,7 +74,7 @@ void HdValueCard::render_() {
     lv_label_set_text(lv_value_, value_.c_str());
     lv_obj_set_style_text_color(lv_value_, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(lv_value_, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(lv_value_, &roboto_40, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(lv_value_, &Font40, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_left(lv_value_, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(lv_value_, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_top(lv_value_, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
